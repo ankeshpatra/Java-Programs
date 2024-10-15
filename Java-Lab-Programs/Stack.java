@@ -17,7 +17,7 @@ public class Stack {
             System.out.println("Stack Overflow!");
         } else {
             stackArray[++top] = value;
-            System.out.println("Pushed: "+value+"onto the stack");
+            System.out.println("Pushed: "+value+" onto the stack");
         }
     }
 
@@ -41,6 +41,15 @@ public class Stack {
             }
         }
     }
+
+    public void pallindrome() {
+        for(int i=0,j=top;i<=top/2;i++,j--) {
+            if(stackArray[i]!=stackArray[j]) {
+                System.out.println("Stack is not a pallindrome!");
+            }
+        System.out.println("Stack is a pallindrome!");
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the stack:");
@@ -48,7 +57,7 @@ public class Stack {
         int choice;
         Stack stack = new Stack(size);
         do {
-            System.out.println("1. Push\n2. Pop\n3. Display\n4. Exit");
+            System.out.println("1. Push\n2. Pop\n3. Display\n4. Pallindrome\n5. Exit");
             System.out.println("Enter your choice:");
             choice = sc.nextInt();
             switch(choice) {
@@ -63,10 +72,13 @@ public class Stack {
                 case 3:
                     stack.display();
                     break;
+                case 4:
+                    stack.pallindrome();
+                    break;
                 default:
                     System.out.println("Exiting...");
             }
-        }while(choice>=1 && choice<=3);
+        }while(choice>=1 && choice<=4);
         sc.close();
     }
 }
