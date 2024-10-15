@@ -47,8 +47,8 @@ public class Stack {
             if(stackArray[i]!=stackArray[j]) {
                 System.out.println("Stack is not a pallindrome!");
             }
-        System.out.println("Stack is a pallindrome!");
         }
+        System.out.println("Stack is a pallindrome!");
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
