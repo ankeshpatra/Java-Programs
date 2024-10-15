@@ -75,8 +75,11 @@ public class Stack {
                 case 4:
                     stack.pallindrome();
                     break;
-                default:
+                case 5:
                     System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
             }
         }while(choice>=1 && choice<=4);
         sc.close();
