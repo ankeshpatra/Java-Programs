@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Lab2
+ * Lab2 - Stack implementation using array
  */
 public class Stack {
     private int maxSize;
