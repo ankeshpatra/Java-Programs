@@ -24,5 +24,6 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int target = sc.nextInt();
         sol.twoSum(nums,target);
+        sc.close();
     }
 }
