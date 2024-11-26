@@ -32,6 +32,10 @@ public class MyPoint {
     }
 
     public double Distance(MyPoint another) {
+        return Distance(another.x,another.y);
+    }
+
+    public double Distance() {
         return Distance(0,0);
     }
 
@@ -40,7 +44,7 @@ public class MyPoint {
         MyPoint point2 = new MyPoint(7,9);
         System.out.println("Point 1:"+point1.toString());
         System.out.println("Point 2:"+point2.toString());
-        System.out.println("Distance from point 1 to origin :"+point1.Distance(point1));
+        System.out.println("Distance from point 1 to origin :"+point1.Distance());
         System.out.println("Distance from point 1 to point 2: "+point1.Distance(point2));
         System.out.println("Distance from point 1 to (6,8): "+point1.Distance(6, 8));
     }
